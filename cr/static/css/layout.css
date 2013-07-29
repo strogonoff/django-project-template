@@ -1,0 +1,27 @@
+html,
+body {
+  height: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  min-width: 1000px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 2em;
+}
+.l-container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+}
+.l-wide-container {
+  width: auto;
+}
+.topbar {
+  margin-bottom: 1em;
+  padding: 10px 0 10px 0;
+}

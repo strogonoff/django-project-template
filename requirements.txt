@@ -1,0 +1,22 @@
+django==1.5.1
+psycopg2==2.4.4
+docutils==0.11
+pygments==1.6
+
+django-debug-toolbar
+django-extensions
+werkzeug
+# ^ For runserver_plus command
+Fabric==1.4.0
+django-maintenancemode==0.10
+south==0.8.1
+pillow==2.1.0
+# ^ Make sure to have libjpeg, zlib, libfreetype installed beforehand
+django-simple-captcha==0.3.0
+django-autoslug==1.5.0
+-e hg+http://bitbucket.org/zuko/django-model-utils#egg=model_utils
+# ^ Provides slughifi function for autoslug.
+# ^ TODO: Get rid of that, find independent library
+django-pipeline
+
+mock==0.8.0

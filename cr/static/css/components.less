@@ -1,0 +1,53 @@
+@import "variables.less";
+
+.topbar {
+  background-color: @highlightBlueLite;
+  color: @bgColor;
+
+  a, a:visited, a:hover {
+    color: @bgColor;
+  }
+}
+
+.topbar__menu {
+  overflow: hidden;
+}
+.topbar__user-menu {
+  float: right;
+  display: inline-block;
+  margin-top: 10px;
+}
+.topbar__site-menu {
+  display: inline-block;
+}
+.topbar__logo {
+  display: block;
+  height: 47px;
+}
+.topbar__logo img {
+  vertical-align: text-top;
+}
+
+
+.topbar__menu--user {
+  float: right;
+  display: inline-block;
+}
+
+.topbar__menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topbar__menu-heading {
+  text-transform: uppercase;
+  font-size: 82%;
+}
+
+.topbar__menu-item {
+  display: block;
+  float: left;
+  line-height: 26px;
+  margin-right: 7px;
+}

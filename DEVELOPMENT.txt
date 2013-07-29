@@ -1,0 +1,10 @@
+Development Recommendations
+===========================
+
+* Write Less instead of CSS.
+  Set up automatic compilation of .less files to .css in the same directory.
+
+* Install on-the-fly syntax/coding style validation in your editor.
+  Under VIM, Syntastic works great.
+
+  TODO: Provide examples of code checker setups in other popular editors.

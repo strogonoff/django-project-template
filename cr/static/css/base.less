@@ -1,0 +1,100 @@
+@import "variables.less";
+
+
+section {  display: block }
+
+[ng-cloak], .ng-cloak {
+  display: none !important;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  display: inline-block;
+  border-radius: 2px;
+  vertical-align: middle;
+  border: 1px solid silver;
+}
+
+form.inline-form {
+  display: inline;
+}
+
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html,
+body,
+button,
+input,
+select,
+textarea {  background-color: @bgColor; color: @textColor }
+
+::-moz-selection {
+  background: @highlightBlue;
+  color: @bgColor;
+  text-shadow: none;
+}
+::selection {
+  background: @highlightBlue;
+  color: @bgColor;
+  text-shadow: none;
+}
+
+a {
+  color: @highlightBlue;
+  text-decoration: none;
+  }
+  a:visited { color: desaturate(darken(@highlightBlue, 10%), 10%) }
+  a:hover {  }
+  a:focus {  outline: thin dotted }
+  a:hover,
+  a:active {
+    outline: 0;
+    text-decoration: underline;
+}
+
+body {
+  cursor: default;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.351;
+}
+
+.unstyled-list {
+  margin: 0; padding: 0;
+  list-style-type: none;
+}
+.unstyled-list li {
+  margin: 0; padding: 0;
+  list-style-type: none;
+}
+
+.pure-button--small {
+  font-size: 80%;
+}
+a.pure-button:hover {
+  text-decoration: none;
+}
+
+.nowrap {
+  white-space: nowrap;
+}

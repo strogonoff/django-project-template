@@ -1,0 +1,66 @@
+{% load staticfiles compressed %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>{% block page_title %}{{ page_title }}{% endblock %}</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+
+  {% compressed_css "main" %}
+
+  {% block extra_head %}{% endblock %}
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="l-container">
+
+      {% if user.is_authenticated %}
+        <div class="topbar__menu--user topbar__menu">
+          <ul>
+            <li class="topbar__menu-item topbar__menu-heading">
+              {{ user.username }}</li>
+            {% if user.is_staff %}
+              <li class="topbar__menu-item"><a href="/admin">Admin</a></li>
+            {% endif %}
+            <li class="topbar__menu-item"><a href="/logout">Log out</a></li>
+          </ul>
+        </div>
+      {% endif %}
+
+      <div class="topbar__menu--site topbar__menu">
+        <ul>
+          <li class="topbar__menu-item topbar__menu-heading">
+            <a href="/">Hello world</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="l-container">
+    {% block body %}{% endblock %}
+  </div>
+
+  {% compressed_js "main" %}
+
+  {% block extra_js %}{% endblock %}
+
+  <script>
+    angular.element(document).ready(function() {
+      angular.bootstrap(document, ['client']);
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+@containerMinW: 780px;
+@containerW: 960px;
+
+html,
+body {
+  height: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  min-width: @containerW + 40px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 2em;
+}
+
+.l-container {
+  width: @containerW;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+}
+.l-wide-container {
+  width: auto;
+}
+
+.topbar {
+  margin-bottom: 1em;
+  padding: 10px 0 10px 0;
+}
