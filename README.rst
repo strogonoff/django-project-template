@@ -1,5 +1,17 @@
+Django project template
+=======================
+
+Though a bit more than default template, still pretty minimal.
+
+Bundles favicons and apple-touch-icons (hitched from h5bp), basic AngularJS
+client-side app. Includes django-pipeline for static asset management.
+
+To do:
+
+* Possibly some simple Fabric/Cuisine-based deployment script.
+
 Initial setup
-=============
+-------------
 
 Install requirements that are not Python modules.
 
