@@ -8,7 +8,8 @@ client-side app. Includes django-pipeline for static asset management.
 
 To do:
 
-* Possibly some simple Fabric/Cuisine-based deployment script.
+* Sphinx-based documentation scaffolding
+* Possibly some simple Fabric/Cuisine-based deployment script
 
 Initial setup
 -------------
