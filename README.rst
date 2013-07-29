@@ -1,5 +1,5 @@
-Setup
-=====
+Initial setup
+=============
 
 Install requirements that are not Python modules.
 
@@ -18,11 +18,11 @@ Install Django 1.5 in there (``pip install django==1.5``).
 Create a project using this template::
 
     $ django-admin.py startproject \
-    > --template=https://github.com/strogonoff/django-project-template/archive/master.zip \
-    > --extension=py --name=.gitignore \
-    > your_project_name
+    --template=https://github.com/strogonoff/django-project-template/archive/master.zip \
+    --extension=py --name=.gitignore \
+    your_project_name
 
-Initialize Git repository in ``your_project_name`` directory.
+Initialize Git repository in ``your_project_name`` directory::
 
     $ cd your_project_name; git init
 
@@ -30,11 +30,11 @@ Put correct settings for this your development environment in settings.py
 (such as DB access settings). settings.py should not be versioned, it contains
 specific local settings and secrets.
 
-Install requirements into virtual Python environment.
+Install requirements into virtual Python environment::
 
     $ pip install -r requirements.txt
 
-Initialize the DB.
+Initialize the DB::
 
     $ ./manage.py syncdb
     Syncing...
@@ -42,7 +42,7 @@ Initialize the DB.
     $ ./manage.py migrate
     Running migrations...
 
-Run tests, development server, Django console to make sure installation works.
+Run tests, development server, Django console to make sure installation works::
 
     $ ./manage.py test
     Ran 500 tests in 20s
