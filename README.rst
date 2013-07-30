@@ -8,7 +8,6 @@ client-side app. Includes django-pipeline for static asset management.
 
 To do:
 
-* Sphinx-based documentation scaffolding
 * Possibly some simple Fabric/Cuisine-based deployment script
 
 Initial setup
@@ -72,3 +71,16 @@ Make sure that Site object has correct domain name/port set
 (http://example.com/admin/sites/site/1/).
 
 See DEVELOPMENT.txt for some further guidelines.
+
+Building docs
+-------------
+
+Get Sphinx in your virtual environment::
+
+    $ pip install sphinx
+
+From ``docs/`` directory, build HTML documentation::
+
+    $ make html
+
+Then open ``build/html/index.html``.
