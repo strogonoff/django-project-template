@@ -108,7 +108,7 @@ DATE_FORMAT = 'd.m.y'
 #==============================================================================
 # django-autoslug
 
-AUTOSLUG_SLUGIFY_FUNCTION = 'model_utils.slughifi'
+AUTOSLUG_SLUGIFY_FUNCTION = '{{ project_name }}.slughifi.slughifi'
 
 
 #==============================================================================
