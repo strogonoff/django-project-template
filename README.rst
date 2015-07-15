@@ -1,14 +1,20 @@
-Django project template
-=======================
+Django template for a web app with AngularJS on the client
+==========================================================
 
-Though a bit more than default template, still pretty minimal.
+Things included:
 
-Bundles favicons and apple-touch-icons (hitched from h5bp), basic AngularJS
-client-side app. Includes django-pipeline for static asset management.
+* A requirements.txt (warning: out-of-date Django there)
+* Favicons and apple-touch-icons (hitched from h5bp)
+* AngularJS client-side scaffolding
+* Sphinx-based documentation scaffolding
+* Static asset minification / concatenation with django-pipeline
+* shell_plus, runserver_plus utility commands will be available
 
-To do:
+Roadmap:
 
-* Possibly some simple Fabric/Cuisine-based deployment script
+* Update for latest Django
+* Offer a way to quickly bootstrap the project inside a VM instead of
+  virtualenv (Ansible playbook and Vagrantfile stubs, probably)
 
 Initial setup
 -------------
