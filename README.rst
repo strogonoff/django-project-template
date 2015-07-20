@@ -15,6 +15,7 @@ Roadmap:
 * Update for latest Django
 * Offer a way to quickly bootstrap the project inside a VM instead of
   virtualenv (Ansible playbook and Vagrantfile stubs, probably)
+* Remove some of the default deps (captcha? Pillow?)
 
 Initial setup
 -------------
