@@ -10,11 +10,7 @@ werkzeug
 Fabric==1.4.0
 django-maintenancemode==0.10
 south==0.8.1
-pillow==2.1.0
-# ^ Make sure to have libjpeg, zlib, libfreetype installed beforehand
-django-simple-captcha==0.3.0
 django-model-utils
-django-autoslug==1.5.0
 django-pipeline
 
 mock==0.8.0
